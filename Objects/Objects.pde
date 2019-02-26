@@ -18,6 +18,7 @@
 //PImage flip;
 
 Ship boat;
+Berg [] bergs;
 
 void setup() {
   //window modifications
@@ -37,18 +38,21 @@ void setup() {
   //flip = loadImage("flip.png");
 
   boat = new Ship();
+  //bergs = new Berg;
 }
 
 void draw() {
   //wipe
+  //populateCircles(20);
   background(233, 255, 255);
   boat.Display();
   boat.Move();
+ 
 }
-void populateCircles() {
 
-  populateCircles(20);
-}
+//void populateCircles() {
+// populateCircles(20); 
+//}
 void keyPressed() {
 
   //if arrow keys are pressed, the (object) will move accordingly
